@@ -37,8 +37,12 @@ $(function () {
             var ssid=$(this).attr("data-id");
             $(".fz-box ul li").filter("[data-id="+ssid+"]").remove();
         } else {
-            $(this).addClass("active");
-            $(this).clone().appendTo($(".gl-cont .con-bottom .fz-box ul"));
+            if($(".fz-box ul li").size()<6){
+                $(this).addClass("active");
+                $(this).clone().appendTo($(".gl-cont .con-bottom .fz-box ul"));
+            }else {
+                alert("最多只能选择六个阵灵参与搭配。");
+            }
         }
     });
     //人物选项卡
@@ -48,23 +52,20 @@ $(function () {
         yxgl_ajax();
     });
     //分享
-    $(".to-fx").hover(function () {
-        $(".fx-list").show();
-    }, function () {
-        $(".fx-list").hide();
+    $(".to-fx").click(function () {
+        $(".fx-list").toggle();  //toggle   控制元素进行隐藏和显示之间的切换
+        return false;
     });
     //出现返回顶部
     $(window).scroll( function () {
-        if($(window).scrollTop()>0){
-            //$(".to-top").css("display","block");
-            $(".to-top").animate({"height":"66px"},0);
+        if($(window).scrollTop()>200){
+            $(".to-top").stop().animate({"height":"66px"},50);
+            //返回顶部
+            $(".to-top").click(function () {
+                $("body,html").animate({"scrollTop": "0px"},50);
+            });
         }else {
-            $(".to-top").animate({"height":0},0);
+            $(".to-top").stop().animate({"height":0},100);
         }
-        //返回顶部
-        $(".to-top").click(function () {
-            $("body,html").animate({"scrollTop": "0px"});
-            return false;
-        });
     });
 });

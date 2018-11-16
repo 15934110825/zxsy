@@ -296,14 +296,14 @@ article {
 .to-top {
     display: block;
     width: 66px;
-    /*height: 66px;*/
+    position: absolute;
     height:0;
     background: url(../img-y/to_top.png) no-repeat;
 }
 .fx-list {
     display: none;
     position: absolute;
-    bottom: 76px;
+    top: 0;
     right: 70px;
     width: 270px;
     height: 50px;
