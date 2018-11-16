@@ -62,10 +62,10 @@ $(function () {
             $(".to-top").stop().animate({"height":"66px"},50);
             //返回顶部
             $(".to-top").click(function () {
-                $("body,html").animate({"scrollTop": "0px"},50);
+                $("body,html").animate({"scrollTop": "0px"},0);
             });
         }else {
-            $(".to-top").stop().animate({"height":0},100);
+            $(".to-top").stop().animate({"height":0},0);
         }
     });
 });
