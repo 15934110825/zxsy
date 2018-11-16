@@ -157,7 +157,7 @@ article {
     margin-bottom: 20px;
     text-align: center;
 }
-.gl-cont .con-top .ts{
+.gl-cont .con-top .ts {
     line-height: 20px;
 }
 .gl-cont .con-nav {
@@ -170,10 +170,10 @@ article {
     float: left;
     border-left: 3px solid #fff;
 }
-.gl-cont .con-nav li.active,.gl-cont .con-nav li:hover {
+.gl-cont .con-nav li.active, .gl-cont .con-nav li:hover {
     border-left: 3px solid #259b29;
 }
-.gl-cont .con-nav li span{
+.gl-cont .con-nav li span {
     display: block;
     width: 78px;
     height: 68px;
@@ -191,16 +191,16 @@ article {
 .gl-cont .con-nav .orange span {
     background: url(../img-y/orange_icon.png) center center no-repeat;
 }
-.gl-cont .con-nav .green.active span,.gl-cont .con-nav .green:hover span {
+.gl-cont .con-nav .green.active span, .gl-cont .con-nav .green:hover span {
     background: url(../img-y/green_icon_h.png) center center no-repeat;
 }
-.gl-cont .con-nav .blue.active span,.gl-cont .con-nav .blue:hover span {
+.gl-cont .con-nav .blue.active span, .gl-cont .con-nav .blue:hover span {
     background: url(../img-y/blue_icon_h.png) center center no-repeat;
 }
-.gl-cont .con-nav .purple.active span,.gl-cont .con-nav .purple:hover span {
+.gl-cont .con-nav .purple.active span, .gl-cont .con-nav .purple:hover span {
     background: url(../img-y/purple_icon_h.png) center center no-repeat;
 }
-.gl-cont .con-nav .orange.active span,.gl-cont .con-nav .orange:hover span {
+.gl-cont .con-nav .orange.active span, .gl-cont .con-nav .orange:hover span {
     background: url(../img-y/orange_icon_h.png) center center no-repeat;
 }
 .gl-cont .con-list {
@@ -209,7 +209,7 @@ article {
     margin-left: 32px;
     margin-bottom: 20px;
 }
-.gl-cont .con-list li,.gl-cont .con-bottom .fz-box li{
+.gl-cont .con-list li, .gl-cont .con-bottom .fz-box li {
     float: left;
     width: 145px;
     height: 240px;
@@ -218,7 +218,7 @@ article {
     cursor: pointer;
     position: relative;
 }
-.gl-cont .con-list li .check{
+.gl-cont .con-list li .check {
     width: 22px;
     height: 22px;
     position: absolute;
@@ -228,37 +228,37 @@ article {
     background: url(../img-y/check.png) no-repeat;
     cursor: pointer;
 }
-.gl-cont .con-list li.active .check{
+.gl-cont .con-list li.active .check {
     background: url(../img-y/checkh.png) no-repeat;
 }
-.gl-cont .con-list li img,.gl-cont .con-bottom .fz-box li img{
+.gl-cont .con-list li img, .gl-cont .con-bottom .fz-box li img {
     display: block;
 }
-.gl-cont .con-list li p,.gl-cont .con-bottom .fz-box li p{
+.gl-cont .con-list li p, .gl-cont .con-bottom .fz-box li p {
     font-size: 14px;
     text-align: center;
 }
-.gl-cont .con-bottom{
+.gl-cont .con-bottom {
     width: 100%;
 }
-.gl-cont .con-bottom h2{
+.gl-cont .con-bottom h2 {
     width: 100%;
     margin-bottom: 34px;
     text-align: center;
     font-size: 18px;
     color: #7c4f91;
 }
-.gl-cont .con-bottom .foot-btn{
+.gl-cont .con-bottom .foot-btn {
     position: relative;
 }
-.gl-cont .con-bottom .start-btn{
+.gl-cont .con-bottom .start-btn {
     display: block;
     width: 221px;
     height: 62px;
     margin: 0 auto;
     background: url(../img-y/start_btn.png) no-repeat;
 }
-.gl-cont .look-btn{
+.gl-cont .look-btn {
     position: absolute;
     width: 197px;
     height: 59px;
@@ -284,6 +284,7 @@ article {
     margin-left: 510px;
     bottom: 120px;
     padding-left: 10px;
+    z-index: 100;
 }
 .to-fx {
     width: 66px;
@@ -293,10 +294,11 @@ article {
     margin-bottom: 10px;
 }
 .to-top {
-    width: 66px;
-    height: 66px;
-    background: url(../img-y/to_top.png) no-repeat;
     display: block;
+    width: 66px;
+    /*height: 66px;*/
+    height:0;
+    background: url(../img-y/to_top.png) no-repeat;
 }
 .fx-list {
     display: none;
