@@ -71,7 +71,3 @@ $(function () {
         $(".yihu .zhqu-cont .box").animate({"top": -r_index * r_height}, 300);
     });
 });
-
-
-
-
