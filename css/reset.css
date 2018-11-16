@@ -1,0 +1,45 @@
+/*重置样式表（reset.css/normallize.css）*/
+*{
+    /*去除默认的外边距和内填充*/
+    margin: 0;
+    padding: 0;
+}
+ul,ol{
+    /*list-style-type: none;*/
+    list-style: none;    /*去除默认的点/数字*/
+}
+a{
+    text-decoration: none;    /*去掉下划线*/
+    color: #000;
+}
+input{
+    border: none;           /*去掉边框*/
+    outline: none;         /*去掉表单显示颜色*/
+}
+/*在ie低级版本中   引入的图片  自带边框*/
+img{
+    border: none;
+}
+.clear:before,.clear:after{
+    content: '';
+    display: table;
+}
+.clear:after{
+    clear: both;
+}
+.clear{
+    zoom: 1;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+
+
+
+
+
+
+

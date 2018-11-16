@@ -1,0 +1,195 @@
+body {
+    background: none;
+    font-size: 12px;
+    font-family: "Microsoft YaHei", Verdana, Geneva, sans-serif, \5b8b\4f53;
+}
+header{
+    height:96px;
+}
+/*=========================导航================*/
+header nav li:last-of-type  .img1{
+    display: none;
+}
+header nav li:last-of-type .img2{
+    display: block;
+}
+article {
+    max-width: 1920px;
+    min-width: 1200px;
+    background: url(../img-b/bg.jpg) no-repeat 0 0;
+    height: 984px;
+    position: relative;
+}
+.content {
+    width: 1200px;
+    height: 984px;
+    position: relative;
+}
+.list {
+    width: 158px;
+    height: 984px;
+    position: absolute;
+    left: 198px;
+    top: 0;
+}
+.list_bg {
+    width: 158px;
+    height: 290px;
+    display: block;
+    background: url(../img-b/list_bg.png) no-repeat 0 0;
+}
+.list a {
+    display: block;
+    width: 158px;
+    height: 58px;
+    background: url(../img-b/list_btn.png) no-repeat right 0;
+    text-align: center;
+    color: #e3dcf1;
+    font-weight: normal;
+}
+.list a:hover{
+    background-position: 0 0;
+}
+.list a span {
+    display: block;
+    font-size: 16px;
+    padding: 10px 0 2px 0;
+}
+.list_dian {
+    display: block;
+    height: 14px;
+    background: url(../img-b/dian.png) no-repeat center center;
+    width: 100%;
+}
+.list_card {
+    display: block;
+    width: 105px;
+    height: 124px;
+    margin: 0 auto;
+    background: url(../img-b/list_card.png) no-repeat 0 0;
+}
+.list_card p {
+    padding: 10px 0 4px 0;
+}
+.list_card img {
+    display: block;
+    margin: 0 auto;
+    width: 84px;
+}
+.list_card span {
+    display: block;
+    text-align: center;
+    color: #e3dcf1;
+}
+.main {
+    width: 840px;
+    height: 984px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.main .logo {
+    display: block;
+    width: 192px;
+    height: 97px;
+    background: url(../img-b/logo.png) no-repeat 0 0;
+    position: absolute;
+    left: 310px;
+    top: 78px;
+}
+.main .music {
+    display: block;
+    width: 47px;
+    height: 47px;
+    background: url(../img-b/music_bg.png) no-repeat 0 0;
+    position: absolute;
+    left: 660px;
+    top: 192px;
+}
+.main .music.bf{
+    animation: music 5s linear infinite;
+}
+.main .music.tz{
+    background-position: -47px 0;
+}
+@keyframes music {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.hezi{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 542px;
+    text-align: center;
+}
+.hezi .fenl{
+    height: 184px;
+    text-align: center;
+}
+.hezi .fenl a{
+    display: inline-block;
+    width: 152px;
+    height: 170px;
+    margin: 0 8px;
+    background: url(../img-b/navbg.png) no-repeat right 0;
+}
+.hezi .fenl a:hover{
+    background-position: 0 0;
+}
+.hezi .fenl span{
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    color: #e3dcf1;
+    line-height: 26px;
+    padding-top: 45px;
+    padding-bottom: 6px;
+}
+.hezi .fenl i{
+    display: block;
+    height: 30px;
+}
+.hezi .fenl .i1{
+    background: url(../img-b/n1.png) no-repeat center center;
+}
+.hezi .fenl .i2{
+    background: url(../img-b/n2.png) no-repeat center center;
+}
+.hezi .fenl .i3{
+    background: url(../img-b/n3.png) no-repeat center center;
+}
+.hezi .fenl .i4{
+    background: url(../img-b/n4.png) no-repeat center center;
+}
+.hezi .fenl .i5{
+    background: url(../img-b/n5.png) no-repeat center center;
+}
+.hezi .fenl .i6{
+    background: url(../img-b/n6.png) no-repeat center center;
+}
+.hezi .fenl .i7{
+    background: url(../img-b/n7.png) no-repeat center center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

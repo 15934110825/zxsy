@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        《诛仙手游》全新版本「鬼道轮回」今日上线</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bbxq.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+</head>
+<body>
+<header id="head"></header>
+<article>
+    <div class="content">
+        <div class="list">
+            <span class="list_bg"></span>
+            <a href="#">
+                <span>情谊诛仙 王者归来</span>
+                <strong>召回老友
+                        豪礼相送</strong>
+            </a>
+            <span class="list_dian"></span>
+            <a href="#">
+                <span>鬼道降世 相聚河阳</span>
+                <strong>招募仙友
+                        赢专属豪礼</strong>
+            </a>
+            <span class="list_dian"></span>
+            <a href="#">
+                <span>新服总动员</span>
+                <strong>四大活动新服专享</strong>
+            </a>
+            <span class="list_dian"></span>
+            <a href="#">
+                <span>礼包领取</span>
+                <strong>新版本专属礼包</strong>
+            </a>
+            <span class="list_dian"></span>
+            <a href="#">
+                <span>缘聚诛仙</span>
+                <strong>老玩家回归专属特权</strong>
+            </a>
+            <span class="list_dian"></span>
+            <div class="list_card">
+                <p>
+                    <img src="img-b/card.jpg" alt="">
+                </p>
+                <span>扫一扫下载游戏</span>
+            </div>
+        </div>
+        <div class="main">
+            <a href="index.html" class="logo"></a>
+            <a href="#" class="music bf"></a>
+            <audio  id="music" src="img-b/20181017_zxbr.mp3" autoplay="autoplay" loop="loop" ></audio>
+            <div class="hezi">
+                <div class="fenl">
+                    <a href="gdzt.html" target="_blank">
+                        <span>六道轮回<br>鬼道现世</span>
+                        <i class="i1"></i>
+                    </a>
+                    <a href="" class="tiaoz" title="1">
+                        <span>全新绘卷<br>魂兮归来</span>
+                        <i class="i2"></i>
+                    </a>
+                    <a href="" class="tiaoz" title="2">
+                        <span>全新星魂<br>更多属性</span>
+                        <i class="i3"></i>
+                    </a>
+                    <a href="" class="tiaoz" title="3">
+                        <span>奇门遁甲<br>助力封神</span>
+                        <i class="i4"></i>
+                    </a>
+                </div>
+                <div class="fenl">
+                    <a href="" class="tiaoz" title="4">
+                        <span>仙乐同享<br>如痴如醉</span>
+                        <i class="i5"></i>
+                    </a>
+                    <a href="" class="tiaoz" title="5">
+                        <span>庙会场景<br>其乐融融</span>
+                        <i class="i6"></i>
+                    </a>
+                    <a href="" class="tiaoz" title="6">
+                        <span>更多精彩<br>更多期待</span>
+                        <i class="i7"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</article>
+<footer id="foot"></footer>
+<script>
+    $(function () {
+        $("#head").load("header.html");
+        $("#foot").load("footer.html");
+        var istrue = true;
+        var player = $("#music")[0];/*jquery对象转换成js对象*/
+        $(".main .music").click(function () {
+            if (istrue) {
+                $(this).removeClass("bf").addClass("tz");
+                player.pause();
+
+            } else {
+                $(this).removeClass("tz").addClass("bf");
+                player.play();
+            }
+            istrue = !istrue;
+            return false;
+        });
+        //页面跳转
+        $(".hezi .fenl .tiaoz").click(function(){
+            var title=$(this).attr("title");
+            window.open("xqy.html?list="+title);
+            return false;
+        });
+    });
+</script>
+</body>
+</html>

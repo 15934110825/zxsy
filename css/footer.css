@@ -1,0 +1,89 @@
+footer {
+    position: relative;
+    z-index: 98;
+    height: 130px;
+    background-color: #ffffff;
+    min-width: 1002px;
+    width: 100%;
+    color: #444444;
+    font-size: 12px;
+}
+footer a {
+    color: #444444;
+    font-family: Verdana, \5b8b\4f53, sans-serif;
+}
+footer .inner {
+    position: relative;
+    z-index: 101;
+    width: 1200px;
+    height: 100px;
+    padding-top: 15px;
+    margin: 0 auto;
+}
+footer .h-wmsj {
+    position: absolute;
+    z-index: 103;
+    width: 220px;
+    height: 37px;
+    top: 26px;
+    border-right: 1px solid #c5c5c5;
+    padding-left: 45px;
+    padding-top: 10px;
+    font-size: 12px;
+    text-align: center;
+    left: 0;
+    background: url(../img/wmlogo.png) no-repeat center center;
+    line-height: 14px;
+}
+footer .h-aqxx {
+    position: absolute;
+    z-index: 102;
+    width: 67px;
+    height: 35px;
+    top: 26px;
+    border: 1px solid #3b3b3b;
+    padding-left: 45px;
+    padding-top: 10px;
+    font-size: 12px;
+    text-align: center;
+    left: 320px;
+    background: url(../img/bg.gif) no-repeat -78px -211px;
+    line-height: 14px;
+}
+footer .inner .hyy{
+    position: absolute;
+    z-index: 103;
+    height: 20px;
+    left: 467px;
+    font-size: 12px;
+ }
+footer .h-list {
+    top: 12px;
+    font-family: Verdana, Geneva, sans-serif;
+}
+footer .h-list a {
+    color: #444444;
+    margin-right: 20px;
+}
+footer .h-whxk {
+    top: 32px;
+}
+footer .h-stxk{
+    top: 52px;
+}
+footer .h-wwby{
+    top: 72px;
+}
+footer .h-bqsy{
+    top: 92px;
+}
+footer .hyy a:hover{
+    color: #cc0000;
+}
+
+
+
+
+
+
+
